@@ -7,7 +7,7 @@ This Project is part of my Full-Stack Engineering Internship.
 In Week 2, I applied CSS3 to style my personal Profile
 webpage.I also used Flexbox, CSS Grid, and Responsive Design techniques,
 
-## Technologies Used 
+## Technologies Used
 
 -HTML5
 -CSS3
@@ -43,3 +43,31 @@ Live Website: Coming Soon
 
 - Learning how to make the website responsive.
 - Understanding Flexbox and CSS Grid.
+
+
+## Week 3 - Project Shoecase & Responsive Design
+
+### What I Learned
+- Creates a project showcase Section
+- Used Css Grid for project cards 
+- Added responsive design for different screen sizes
+- Added hover  effects and animations
+- Tested the website on a mobile\tablet screen
+
+## Technologies Used
+-HTML5
+-CSS3
+-CSS Flexbox
+-CSS Grid
+-Responsive Design
+-GitHub
+
+### project showcase
+The Website Contains four project cards displayed in a responsive
+grid Layout. The cards include hover effects to make the interface more
+interactive.
+
+### Responsive Testing
+The website was tested in responsive\mobile view to make
+sure the content and project cards fit properly on smaller 
+screens.
