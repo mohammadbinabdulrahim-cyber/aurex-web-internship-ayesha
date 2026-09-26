@@ -71,3 +71,30 @@ interactive.
 The website was tested in responsive\mobile view to make
 sure the content and project cards fit properly on smaller 
 screens.
+
+# AUREX web Internship -Week 4
+Name: [Ayesha kousar]
+Domain: Fronted Development
+Week: 4
+
+Live  Deployment link
+Technologies Used : HTML5,CSS3,Vanila Javascript
+
+Features Implemented :
+-Add Task 
+-Edit Task
+-Delete Task
+-Maek Task as complete
+-Filtering
+-Form Validation
+-Localstorage save\reterive
+
+Challenge Faced: Localstorage
+
+Completed Javascript Excersices:
+-Variable (let,const)
+-Conditions(if\else)
+-loops(for,while)
+-Functions
+-Arrays
+-Objects

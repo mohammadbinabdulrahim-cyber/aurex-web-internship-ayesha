@@ -160,3 +160,46 @@ nav a:hover {
 html {
     scroll-behavior: smooth;
 }
+
+/* Task Manager */
+#task-manager {
+    margin: 40px auto;
+    padding: 25px;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#task-manager h2 {
+    margin-bottom: 20px;
+}
+
+#task-input {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#task-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters {
+    margin-top: 20px;
+}
+
+.filters button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#error-message {
+    margin-top: 10px;
+}
