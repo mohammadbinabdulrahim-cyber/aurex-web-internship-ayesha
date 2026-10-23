@@ -1,25 +1,18 @@
 {
   "name": "aurex-web",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mohammadbinabdulrahim-cyber/aurex-web-internship-ayesha.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/mohammadbinabdulrahim-cyber/aurex-web-internship-ayesha/issues"
-  },
-  "homepage": "https://github.com/mohammadbinabdulrahim-cyber/aurex-web-internship-ayesha#readme",
+  "type": "module",
   "dependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
     "express": "^5.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "vite": "^8.3.2"
-  }
+  },
+  "devDependencies": {}
 }
