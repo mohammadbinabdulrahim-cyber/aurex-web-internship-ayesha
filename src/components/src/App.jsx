@@ -1,37 +1,50 @@
 import { useState } from "react";
 
-function App() {
-  const [tasks, setTasks] = useState([]);
+export default function App() {
   const [task, setTask] = useState("");
+  const [tasks, setTasks] = useState([]);
 
   function addTask(e) {
     e.preventDefault();
-    if (!task.trim()) return;
 
-    setTasks([
-      ...tasks,
-      { id: Date.now(), text: task, completed: false }
+    const newTask = task.trim();
+    if (!newTask) return;
+
+    setTasks((previousTasks) => [
+      ...previousTasks,
+      {
+        id: Date.now(),
+        text: newTask,
+        completed: false,
+      },
     ]);
+
     setTask("");
   }
 
   function toggleTask(id) {
-    setTasks(tasks.map((item) =>
-      item.id === id
-        ? { ...item, completed: !item.completed }
-        : item
-    ));
+    setTasks((previousTasks) =>
+      previousTasks.map((item) =>
+        item.id === id
+          ? { ...item, completed: !item.completed }
+          : item
+      )
+    );
   }
 
   function deleteTask(id) {
-    setTasks(tasks.filter((item) => item.id !== id));
+    setTasks((previousTasks) =>
+      previousTasks.filter((item) => item.id !== id)
+    );
   }
 
   return (
     <main>
       <h1>React Task Manager</h1>
+
       <form onSubmit={addTask}>
         <input
+          type="text"
           value={task}
           onChange={(e) => setTask(e.target.value)}
           placeholder="Enter your task"
@@ -46,13 +59,14 @@ function App() {
               onClick={() => toggleTask(item.id)}
               style={{
                 cursor: "pointer",
-                textDecoration: item.completed ? "line-through" : "none"
+                textDecoration: item.completed
+                  ? "line-through"
+                  : "none",
               }}
             >
               {item.text}
-            </span>
-            {" "}
-            <button onClick={() => deleteTask(item.id)}>
+            </span>{" "}
+            <button type="button" onClick={() => deleteTask(item.id)}>
               Delete
             </button>
           </li>
@@ -61,5 +75,3 @@ function App() {
     </main>
   );
 }
-
-export default App;
